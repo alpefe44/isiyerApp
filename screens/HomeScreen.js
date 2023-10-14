@@ -14,7 +14,7 @@ const HomeScreen = () => {
   const video = React.useRef(null);
   const [status, setStatus] = useState({});
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: 'white', marginVertical: 20 }}>
+    <ScrollView style={{ flex: 1, backgroundColor: 'white', paddingVertical: 20 }}>
       <View style={{ elevation: 40, shadowColor: 'green', marginVertical: 40, }}>
         <View style={{ borderWidth: 15, borderRadius: 10, borderTopColor: 'green', borderBottomColor: 'white', borderRightColor: 'white', borderLeftColor: 'green', padding: 10, flexDirection: 'row', width: '80%', marginHorizontal: 20, alignItems: 'center', justifyContent: 'space-around', alignSelf: 'center' }}>
           <View style={{ width: 50, height: 50 }}>
@@ -30,7 +30,7 @@ const HomeScreen = () => {
             ref={video}
             style={{ flex: 1, borderRadius: 15 }}
             source={require('../assets/video.mp4')}
-            isMuted = {true}
+            isMuted={true}
             shouldPlay
             resizeMode={ResizeMode.CONTAIN}
             isLooping
@@ -64,7 +64,7 @@ const HomeScreen = () => {
 
       </ScrollView>
       <View>
-        <Text style={{ marginHorizontal: 20, fontWeight: 'bold', fontSize: 24 , borderTopWidth:.6 , borderTopColor:'green'}}>Çalışma Sistemimiz</Text>
+        <Text style={{ marginHorizontal: 20, fontFamily: 'Gabarito', fontSize: 24, borderTopWidth: .6, borderTopColor: 'green' }}>Çalışma Sistemimiz</Text>
         <View style={{ flexDirection: 'row', marginHorizontal: 10, alignSelf: 'center', width: '100%', justifyContent: 'center' }}>
           <View style={{ alignItems: 'center' }}>
             <Image style={{ width: 80, height: 100 }} source={{ uri: "https://isiyermekanik.files.wordpress.com/2022/06/1-3.png" }}></Image>
